@@ -1,3 +1,3 @@
 通过禁用毛玻璃效果修复dsh-our-free-model插件在dsha上运行时的页面显示问题
-复制该链接到dsha粘贴并安装
+复制该页面链接到dsha粘贴并安装
 使用Deepseek v4.1flash编写
