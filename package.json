@@ -1,0 +1,61 @@
+{
+  "name": "dsha-ofm-fix",
+  "version": "0.1.0",
+  "description": "DSH/DSHA plugin: turn dsh-our-free-model's frosted-glass surfaces into solid panels (no backdrop-filter, opaque theme surface, background aurora off). Pure CSS overlay — it never modifies the upstream plugin's files. No build step: install straight from GitHub.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "tools/selftest.mjs",
+    "tools/pack.mjs",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node tools/selftest.mjs",
+    "pack": "node tools/pack.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  },
+  "engines": {
+    "dsh": "^0.2.0-rc.1",
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DRC2-neo/dsha-ofm-fix"
+  },
+  "homepage": "https://github.com/DRC2-neo/dsha-ofm-fix#readme",
+  "bugs": {
+    "url": "https://github.com/DRC2-neo/dsha-ofm-fix/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsha",
+    "deepseek-harness",
+    "plugin",
+    "glassmorphism",
+    "our-free-model",
+    "css"
+  ],
+  "license": "MIT"
+}

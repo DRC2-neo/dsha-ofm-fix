@@ -1,0 +1,10 @@
+# dsha-ofm-fix bundle patch.
+#
+# 一行 insert 即挂载 Host 半身；浏览器半身由 package.json 的 dsh.client 声明，
+# 并绑定在 name 为裸包名的这一行上（子路径行不会携带半身）。
+#
+# 这个插件没有可配置项：它的全部行为就是往页面里注入一段 CSS。
+- insert:
+    - id: dsha-ofm-fix
+      name: 'dsha-ofm-fix'
+      config: {}
